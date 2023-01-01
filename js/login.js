@@ -6,6 +6,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
    let pass = document.getElementById("pass_field").value
       if (email=="zakaria00sakib@gmail.com" && pass== "112233"){
         console.log ("Valid");
+        window.location.href= "bank.html"
       }
       else {
         console.log ("inValid");
