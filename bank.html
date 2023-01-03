@@ -11,6 +11,47 @@
     <header>
         <h1 class="text-4xl text-center mt-5">Welcome to <span class="font-semibold">DOM Bank </span></h1>
     </header>
+    <main>
+        <!-- Show card -->
+        <section class="mt-7">
+            <div class="grid grid-cols-3 gap-4 w-3/4 m-auto ">
+                <div class="bg-sky-300 rounded-lg p-6">
+                    <p class="text-3xl">Deposit</p>
+                    <p class="text-4xl">$00</p>
+                </div>
+                <div class="bg-amber-300 rounded-lg p-6">
+                    <p class="text-3xl">Withdraw</p>
+                    <p class="text-4xl">$00</p>
+                </div>
+                <div class="bg-violet-400 rounded-lg p-6">
+                    <p class="text-3xl">Balance</p>
+                    <p class="text-4xl">$1200</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Input Card -->
+        <section class="mt-6">
+            <div class="grid grid-cols-2 gap-4 w-3/4 m-auto ">
+                <div class=" bg-green-300 rounded-2xl p-5">
+                    <p class="text-3xl ">Please Deposit</p>
+                    <div class="p-3" >
+                        <input  class ="block w-3/5 rounded-lg p-1 mb-3" type="text"  placeholder=" $ Input You want to Deposit">
+                        <button class ="hover:bg-yellow-500 hover:text-white  block bg-yellow-300 px-4 py-2 font-semibold rounded-2xl" type="submit">Deposit</button>
+                    </div>
+                </div>
+                <div class=" bg-teal-300 rounded-2xl p-5" >
+                    <p class="text-3xl ">Please Withdraw</p>
+                    <div class="p-3" >
+                        <input  class ="block w-3/5 rounded-lg p-1 mb-3" type="text"  placeholder=" $ Input You want to Winthdraw">
+                        <button class ="hover:bg-yellow-500 hover:text-white  bg-yellow-300 px-4 py-2 font-semibold rounded-2xl" type="submit">Withdraw</button>
+                    </div>
+                </div>
+              
+
+            </div>    
+        </section>
+    </main>
     
 </body>
 </html>
