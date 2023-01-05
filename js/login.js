@@ -9,6 +9,6 @@ document.getElementById('btn-submit').addEventListener('click', function(){
         window.location.href= "bank.html"
       }
       else {
-        console.log ("inValid");
+        alert("zakaria00sakib@gmai.com #112233")
       }
 }) 

@@ -10,9 +10,14 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     const valueDepoTotal  = parseFloat(previousDepoTotal)
 
     const newDepoAmount = valueDepoAmount + valueDepoTotal
+   
+    if(isNaN(depositAmount) ){
+        alert("Please Enter Valid Number")
+        depositfield.value =''
+        return
 
-    depositElement.innerText = newDepoAmount     
-    
+    }
+    depositElement.innerText = newDepoAmount  
 
     //For Balance 
     let previousBalaTotal = document.getElementById("total-balance")
@@ -45,9 +50,12 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
 
     const newWithdraw = valueWithAmount+valueWithtotal
 
-    withdrawElement.innerText =newWithdraw 
+    if(isNaN(withdrawAmount) ){
+        alert("Please Enter Valid Number")
+        withdrawField.value =""
+        return
 
-
+    }
     //for balance 
 
     let previousBalaTotal = document.getElementById("total-balance")
@@ -57,8 +65,15 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const valueBalaAmount = parseFloat(balanceAmount)
     
     const newBalaAmount = valueBalaAmount 
+    if(newBalaAmount<valueWithAmount){
+        alert("Not Enough Money")
 
-    previousBalaTotal.innerText = newBalaAmount - valueWithAmount
+    }
+    else{
+        previousBalaTotal.innerText = newBalaAmount - valueWithAmount
+        withdrawElement.innerText =newWithdraw 
+    }
+  
 
     withdrawField.value =""
 
